@@ -1,0 +1,1 @@
+vcs -f rtl_03.f -full64 -R -debug_access+all +v2k +maxdelays -negdelay +neg_tchk +define+SDF+$1 +define+CYCLE=$2

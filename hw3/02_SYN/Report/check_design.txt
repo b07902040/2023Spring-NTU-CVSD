@@ -1,0 +1,36 @@
+ 
+****************************************
+check_design summary:
+Version:     U-2022.12
+Date:        Sun Apr 23 12:22:13 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      1
+    Unconnected ports (LINT-28)                                     1
+
+Cells                                                              18
+    Cells do not drive (LINT-1)                                    18
+--------------------------------------------------------------------------------
+
+Warning: In design 'core', cell 'B_298' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'B_299' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'B_300' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C15817' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C15830' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C15902' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C15903' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C15904' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C16096' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C16154' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C16158' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C16178' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C16182' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C16216' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C16231' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C16234' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C16237' does not drive any nets. (LINT-1)
+Warning: In design 'core', cell 'C16240' does not drive any nets. (LINT-1)
+Warning: In design 'core', port 'i_in_valid' is not connected to any nets. (LINT-28)
+1

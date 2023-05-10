@@ -1,0 +1,95 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'core' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : core
+Version: U-2022.12
+Date   : Sun Apr 23 12:24:25 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: counter_256_reg[4]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: in_mod_r_reg[12][6]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core               tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  counter_256_reg[4]/CK (DFFRX2)                          0.00 #     0.50 r
+  counter_256_reg[4]/Q (DFFRX2)                           0.52       1.02 f
+  U2073/Y (CLKBUFX3)                                      0.65       1.66 f
+  U2057/Y (AND2X2)                                        0.47       2.13 f
+  U2068/Y (OR2X6)                                         0.22       2.35 f
+  U2913/Y (INVXL)                                         0.24       2.59 r
+  U2911/Y (NAND2X1)                                       0.22       2.81 f
+  U2912/Y (NAND2X4)                                       0.21       3.02 r
+  r1289/a[6] (core_DW_div_uns_0)                          0.00       3.02 r
+  r1289/U10/Y (AND2X6)                                    0.18       3.20 r
+  r1289/U11/Y (CLKINVX1)                                  0.19       3.39 f
+  r1289/U18/Y (NAND2X1)                                   0.21       3.60 r
+  r1289/U8/Y (AND2X2)                                     0.28       3.88 r
+  r1289/U20/Y (XOR2X1)                                    0.25       4.12 f
+  r1289/U29/Y (MXI2XL)                                    0.48       4.60 r
+  r1289/U21/Y (OAI2BB1X2)                                 0.29       4.89 f
+  r1289/U26/Y (MXI2X2)                                    0.32       5.22 f
+  r1289/U7/Y (OAI2BB1X2)                                  0.38       5.60 f
+  r1289/U27/Y (MXI2X2)                                    0.34       5.94 r
+  r1289/U36/Y (XOR2X1)                                    0.32       6.25 f
+  r1289/U31/Y (MXI2XL)                                    0.48       6.73 r
+  r1289/U16/Y (OAI2BB1X2)                                 0.31       7.04 f
+  r1289/U15/Y (INVX1)                                     0.25       7.29 r
+  r1289/U13/Y (NAND2X2)                                   0.10       7.39 f
+  r1289/U9/Y (AND2X2)                                     0.20       7.59 f
+  r1289/U17/Y (AO21X4)                                    0.23       7.82 f
+  r1289/quotient[0] (core_DW_div_uns_0)                   0.00       7.82 f
+  U2056/Y (BUFX16)                                        0.23       8.05 f
+  add_0_root_add_0_root_add_463_4_I4/B[0] (core_DW01_add_69_DW01_add_73)
+                                                          0.00       8.05 f
+  add_0_root_add_0_root_add_463_4_I4/U1/Y (AND2X2)        0.23       8.29 f
+  add_0_root_add_0_root_add_463_4_I4/U1_1/CO (ADDFX1)     0.34       8.63 f
+  add_0_root_add_0_root_add_463_4_I4/U1_2/CO (ADDFX1)     0.36       8.99 f
+  add_0_root_add_0_root_add_463_4_I4/U1_3/S (ADDFXL)      0.89       9.88 r
+  add_0_root_add_0_root_add_463_4_I4/SUM[3] (core_DW01_add_69_DW01_add_73)
+                                                          0.00       9.88 r
+  U2781/Y (NOR2XL)                                        0.28      10.15 f
+  U2062/Y (CLKBUFX3)                                      0.35      10.51 f
+  U3888/Y (AND2XL)                                        0.47      10.97 f
+  U4425/Y (CLKBUFX3)                                      0.84      11.81 f
+  U10078/Y (AOI221XL)                                     0.77      12.58 r
+  U10079/Y (NAND4X1)                                      0.26      12.84 f
+  U2530/Y (AOI22XL)                                       0.49      13.33 r
+  U10080/Y (OAI221XL)                                     0.34      13.67 f
+  U2254/Y (AO22X1)                                        0.45      14.11 f
+  in_mod_r_reg[12][6]/D (DFFQX2)                          0.00      14.11 f
+  data arrival time                                                 14.11
+
+  clock i_clk (rise edge)                                14.00      14.00
+  clock network delay (ideal)                             0.50      14.50
+  clock uncertainty                                      -0.10      14.40
+  in_mod_r_reg[12][6]/CK (DFFQX2)                         0.00      14.40 r
+  library setup time                                     -0.28      14.12
+  data required time                                                14.12
+  --------------------------------------------------------------------------
+  data required time                                                14.12
+  data arrival time                                                -14.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
