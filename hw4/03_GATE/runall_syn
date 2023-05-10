@@ -1,0 +1,13 @@
+cp ../02_SYN/Netlist/IOTDF_syn.v ./
+cp ../02_SYN/Netlist/IOTDF_syn.sdf ./
+cp ../02_SYN/Netlist/IOTDF_syn.sdc ./
+cp ../02_SYN/Netlist/IOTDF_syn.ddc ./
+vcs -f rtl_03.f -full64 -R +v2k -debug_access+all +define+SDF+p1+F1 +neg_tchk | tee rtl_syn_F1.log
+vcs -f rtl_03.f -full64 -R +v2k -debug_access+all +define+SDF+p1+F2 +neg_tchk | tee rtl_syn_F2.log
+vcs -f rtl_03.f -full64 -R +v2k -debug_access+all +define+SDF+p1+F3 +neg_tchk | tee rtl_syn_F3.log
+vcs -f rtl_03.f -full64 -R +v2k -debug_access+all +define+SDF+p1+F4 +neg_tchk | tee rtl_syn_F4.log
+vcs -f rtl_03.f -full64 -R +v2k -debug_access+all +define+SDF+p1+F5 +neg_tchk | tee rtl_syn_F5.log
+vcs -f rtl_03.f -full64 -R +v2k -debug_access+all +define+SDF+p1+F6 +neg_tchk | tee rtl_syn_F6.log
+vcs -f rtl_03.f -full64 -R +v2k -debug_access+all +define+SDF+p1+F7 +neg_tchk | tee rtl_syn_F7.log
+vcs -f rtl_03.f -full64 -R +v2k -debug_access+all +define+SDF+p1+F8 +neg_tchk | tee rtl_syn_F8.log
+vcs -f rtl_03.f -full64 -R +v2k -debug_access+all +define+SDF+p1+F9 +neg_tchk | tee rtl_syn_F9.log

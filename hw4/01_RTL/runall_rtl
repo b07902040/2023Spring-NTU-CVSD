@@ -1,0 +1,9 @@
+vcs -f rtl_01.f -full64 -R +v2k -debug_access+all +define+p1+F1 | tee rtl_F1.log
+vcs -f rtl_01.f -full64 -R +v2k -debug_access+all +define+p1+F2 | tee rtl_F2.log
+vcs -f rtl_01.f -full64 -R +v2k -debug_access+all +define+p1+F3 | tee rtl_F3.log
+vcs -f rtl_01.f -full64 -R +v2k -debug_access+all +define+p1+F4 | tee rtl_F4.log
+vcs -f rtl_01.f -full64 -R +v2k -debug_access+all +define+p1+F5 | tee rtl_F5.log
+vcs -f rtl_01.f -full64 -R +v2k -debug_access+all +define+p1+F6 | tee rtl_F6.log
+vcs -f rtl_01.f -full64 -R +v2k -debug_access+all +define+p1+F7 | tee rtl_F7.log
+vcs -f rtl_01.f -full64 -R +v2k -debug_access+all +define+p1+F8 | tee rtl_F8.log
+vcs -f rtl_01.f -full64 -R +v2k -debug_access+all +define+p1+F9 | tee rtl_F9.log

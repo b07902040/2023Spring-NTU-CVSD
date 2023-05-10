@@ -1,0 +1,76 @@
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Tue May  9 12:06:02 2023
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '../00_TESTBED/testfixture.v'
+Parsing design file './IOTDF.v'
+Top Level Modules:
+       test
+TimeScale is 1 ns / 10 ps
+Starting vcs inline pass...
+
+1 module and 0 UDP read.
+recompiling module test
+make: Warning: File `filelist.hsopt.llvm2_0.objs' has modification time 0.32 s in the future
+make[1]: Warning: File `filelist.hsopt.llvm2_0.objs' has modification time 0.24 s in the future
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Warning: File `filelist.hsopt.llvm2_0.objs' has modification time 0.072 s in the future
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _96256_archive_1.so _cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o /usr/cad/synopsys/verdi/2022.06/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make: warning:  Clock skew detected.  Your build may be incomplete.
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  May  9 12:06 2023
+-----------------------------------------------------
+
+Start to Send IOT Data & Compare ...
+
+
+P00:  ** Correct!! ** , iot_out=fa0f13924b6c4875bd5f5e965c8c6fc9
+P01:  ** Correct!! ** , iot_out=f8b5ed424bd8d48c4561a16010202c1f
+P02:  ** Correct!! ** , iot_out=c8824c5d1d8650295ae740fe096468c3
+P03:  ** Correct!! ** , iot_out=fcea3f279d925dc52ec4c7ee6c905b93
+P04:  ** Correct!! ** , iot_out=ea11441ea823a0ade3852d25c71f750a
+P05:  ** Correct!! ** , iot_out=eeccfe0ea62b02ad92c025e86bd303db
+P06:  ** Correct!! ** , iot_out=d495a168f2987fa5e06673e0f67f6028
+P07:  ** Correct!! ** , iot_out=fd799525a5793d4c74d1b81b5df28d34
+P08:  ** Correct!! ** , iot_out=df5e9b3eaaf1de60ef68672fe6d01dcc
+P09:  ** Correct!! ** , iot_out=e8314ae60ff5850bb1feccdf549dc780
+P10:  ** Correct!! ** , iot_out=f6ca503e3ecabf188b00992f75a29e03
+P11:  ** Correct!! ** , iot_out=cd7944c200cea18c4eab0328c544fc0f
+
+-----------------------------------------------------
+
+Congratulations! All data have been generated successfully!
+
+Total cost time:    9600.00 ns
+-------------------------PASS------------------------
+
+$finish called from file "../00_TESTBED/testfixture.v", line 334.
+$finish at simulation time               960000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 9600000 ps
+CPU Time:      0.460 seconds;       Data structure size:   0.0Mb
+Tue May  9 12:06:12 2023
+CPU time: .843 seconds to compile + .794 seconds to elab + .878 seconds to link + .541 seconds in simulation

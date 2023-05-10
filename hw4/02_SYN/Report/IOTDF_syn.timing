@@ -1,0 +1,67 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IOTDF
+Version: U-2022.12
+Date   : Tue May  9 12:21:11 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: max1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gate_max2_reg/latch
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  max1_reg[0]/CK (DFFX1)                                  0.00       1.00 r
+  max1_reg[0]/QN (DFFX1)                                  0.45       1.45 f
+  U2622/Y (OAI22XL)                                       0.24       1.69 r
+  U2624/Y (AOI222XL)                                      0.19       1.88 f
+  U2627/Y (OAI22XL)                                       0.26       2.14 r
+  U2087/Y (AOI211XL)                                      0.11       2.25 f
+  U2629/Y (OA22X1)                                        0.38       2.62 f
+  U2746/Y (OA21XL)                                        0.17       2.79 f
+  U2747/Y (OAI21XL)                                       0.18       2.97 r
+  U1882/Y (AOI211XL)                                      0.12       3.09 f
+  U2748/Y (OAI21XL)                                       0.20       3.28 r
+  U1641/Y (AOI211XL)                                      0.12       3.40 f
+  U1317/Y (AOI211XL)                                      0.29       3.69 r
+  U2749/Y (NOR3BX1)                                       0.11       3.80 f
+  U2470/Y (OAI21XL)                                       0.18       3.98 r
+  U1510/Y (AOI211XL)                                      0.12       4.10 f
+  U2753/Y (OAI21XL)                                       0.19       4.29 r
+  U2754/Y (NAND2XL)                                       0.07       4.36 f
+  U2755/Y (OAI2BB2XL)                                     0.16       4.52 f
+  U1463/Y (NAND2XL)                                       0.14       4.66 r
+  U1462/Y (OAI211XL)                                      0.11       4.77 f
+  U4294/Y (AND2X2)                                        0.22       4.99 f
+  clk_gate_max2_reg/EN (SNPS_CLOCK_GATE_HIGH_IOTDF_19)
+                                                          0.00       4.99 f
+  clk_gate_max2_reg/latch/E (TLATNTSCAX2)                 0.00       4.99 f
+  data arrival time                                                  4.99
+
+  clock clk (rise edge)                                   4.50       4.50
+  clock network delay (ideal)                             1.00       5.50
+  clock uncertainty                                      -0.10       5.40
+  clk_gate_max2_reg/latch/CK (TLATNTSCAX2)                0.00       5.40 r
+  clock gating setup time                                -0.26       5.14
+  data required time                                                 5.14
+  --------------------------------------------------------------------------
+  data required time                                                 5.14
+  data arrival time                                                 -4.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.15
+
+
+1
